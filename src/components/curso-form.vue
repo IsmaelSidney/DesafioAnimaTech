@@ -15,7 +15,7 @@
         <FormAula/>
         
         <div class="btn-add-aula">
-            <p class="button-add-aula">+</p>
+            <p class="button-add-aula" v-on:click="innerForm">+</p>
         </div>
         <p class="button-content2">Salvar</p>
     </section>
@@ -29,7 +29,12 @@ export default {
     name: "Form",
     components:{
         FormAula
-    }
+    },
+    methods: {
+        innerForm(){
+            return <FormAula/>
+        }
+    },
 }
 </script>
 

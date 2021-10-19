@@ -1,9 +1,9 @@
 <template>
     <header>
-        <img src="../assets/logo.png" alt="">
+        <router-link to="/" exact><img src="../assets/logo.png" alt=""></router-link> 
         <ul>
-            <li>Cursos</li>
-            <li>Painel Administrativo</li>
+            <router-link to="/" exact><li>Cursos</li></router-link> 
+            <router-link to="/adm-panel"><li>Painel Administrativo</li></router-link> 
         </ul>
    </header>
 </template>
@@ -43,9 +43,14 @@ ul{
     color: #FDFDFD;
     margin-right: 5rem;
     
+    
 }
 li{
     display: inline;
     margin: 1rem;
 }
+a{
+text-decoration: none;
+}
+
 </style>

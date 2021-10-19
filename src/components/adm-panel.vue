@@ -30,7 +30,8 @@
         </table>
 
         <div class="btn-add-curso">
-            <p class="button-add-curso">+</p>
+            <router-link to="/curso-form"> <p class="button-add-curso">+</p></router-link>
+           
         </div>
     </section>
        
